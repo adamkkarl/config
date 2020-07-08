@@ -7,7 +7,7 @@ filetype plugin indent on
 
 """" Basic Behavior
 set number              " show line number
-set wrap                " wrap lines
+set nolist wrap linebreak breakat&vim " wrap lines (only at whitespace)
 set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching parentheses/brackets [{()}]
@@ -40,10 +40,6 @@ set hlsearch            " highlight matches
 set autoread            " autoreload the file if it has been changed outside of vim
 
 
-"inoremap " ""<left>
-"inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
-"inoremap {<CR> {<CR>}<ESC>O
-"inoremap {;<CR> {<CR>};<ESC>O
