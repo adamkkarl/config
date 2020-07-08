@@ -2,9 +2,8 @@
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
-# general aliases
-alias ll='ls -l'
-alias la='ls -a'
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
 
-# git aliases
-alias gs='git status'
+
