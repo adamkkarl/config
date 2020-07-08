@@ -2,6 +2,8 @@
 
 " use vim settings instead of vi
 set nocompatible
+" use filetype-based syntax highlighting, ftplugins, and indentation
+filetype plugin indent on
 
 """" Basic Behavior
 set number              " show line number
@@ -17,9 +19,9 @@ nmap j gj
 nmap k gk
 
 """" Vim Appearance
+set t_Co=256
 colorscheme slate       " put colorscheme files in ~/.vim/colors/
-" use filetype-based syntax highlighting, ftplugins, and indentation
-filetype plugin indent on
+colorscheme gruvbox     " idk why removing the slate line messes up setting to gruvbox
 
 """" Tab settings
 set tabstop=2           " width that a <TAB> character displays as
