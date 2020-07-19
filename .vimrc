@@ -40,6 +40,7 @@ set hlsearch            " highlight matches
 set autoread            " autoreload the file if it has been changed outside of vim
 
 
+inoremap " ""<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
